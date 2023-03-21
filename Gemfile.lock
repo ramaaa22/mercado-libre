@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/jekyll/jekyll-sass-converter
+  revision: 2cb386f2ff446a5c1b23c2e6a8e682ca7010cc8a
+  branch: master
+  specs:
+    jekyll-sass-converter (3.0.0)
+      sass-embedded (~> 1.54)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -88,6 +96,7 @@ GEM
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
+    google-protobuf (3.22.2-x86_64-linux)
     i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     importmap-rails (1.1.5)
@@ -159,6 +168,8 @@ GEM
     regexp_parser (2.7.0)
     rexml (3.2.5)
     rubyzip (2.3.2)
+    sass-embedded (1.59.3-x86_64-linux-gnu)
+      google-protobuf (~> 3.21)
     selenium-webdriver (4.8.1)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 3.0)
@@ -209,6 +220,7 @@ DEPENDENCIES
   debug
   importmap-rails
   jbuilder
+  jekyll-sass-converter!
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   selenium-webdriver
