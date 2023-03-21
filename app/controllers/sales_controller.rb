@@ -3,7 +3,7 @@ class SalesController < ApplicationController
 
   # GET /sales or /sales.json
   def index
-    @sales = Sale.all
+    @sales = Sale.all.order("date DESC")
   end
 
   # GET /sales/1 or /sales/1.json
@@ -22,6 +22,7 @@ class SalesController < ApplicationController
   # POST /sales or /sales.json
   def create
     @sale = Sale.new(sale_params)
+    @sale.date= DateTime.now
 
     respond_to do |format|
       if @sale.save
